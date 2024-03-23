@@ -1,0 +1,13 @@
+﻿@model Cumulative1.Models.Teacher
+@{
+    ViewBag.Title = "Show";
+}
+
+<h2>Show</h2>
+<a href="/Teacher/List">Return to Teachers</a>
+<div>
+    <h2 id="teachername">@Model.TeacherFname @Model.TeacherLname </h2>
+    <p>ID: @Model.TeacherId</p>
+    <p>Hired on: @Model.HireDate</p>
+    <p>Current Salary: @Model.Salary</p>
+</div>
