@@ -50,7 +50,6 @@ namespace Cumulative1.Controllers
                 string StudentNumber = resultSet["studentnumber"].ToString();
                 string EnrolDate = resultSet["enroldate"].ToString();
                 
-
                 Student NewStudent = new Student();
                 NewStudent.StudentId = StudentId;
                 NewStudent.StudentFname = StudentFname;
@@ -58,15 +57,12 @@ namespace Cumulative1.Controllers
                 NewStudent.StudentNumber = StudentNumber;
                 NewStudent.EnrolDate = EnrolDate;
               
-
                 StudentInfo.Add(NewStudent);
             }
             //database connection: OFF
             Conn.Close();
 
             return StudentInfo;
-
-
         }
 
         /// <summary>
@@ -94,8 +90,6 @@ namespace Cumulative1.Controllers
                 string StudentLname = resultSet["studentlname"].ToString();
                 string StudentNumber = resultSet["studentnumber"].ToString();
                 string EnrolDate = resultSet["enroldate"].ToString();
-
-
                 
                 NewStudent.StudentId = StudentId;
                 NewStudent.StudentFname = StudentFname;
@@ -103,19 +97,8 @@ namespace Cumulative1.Controllers
                 NewStudent.StudentNumber = StudentNumber;
                 NewStudent.EnrolDate = EnrolDate;
             }
-
             Conn.Close();
             return NewStudent;
-
-
-
-
         }
-
-
-
-
-
     }
-
 }
